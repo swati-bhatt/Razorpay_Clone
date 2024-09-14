@@ -26,7 +26,7 @@ The clone mimics the layout, design elements, and overall user interface of the 
 
 ## ☞Future Improvements🔮
 - Adding more interactivity and dynamic features
-- Backend integration for payments (optional)
+- Backend integration for payments
 
 
 ##  ☞Sneak Peak 🫣
