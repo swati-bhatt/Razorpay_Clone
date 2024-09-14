@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RazorPay</title>
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.png">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <!-- google font -->
@@ -20,8 +21,16 @@
         .ctasec{
             background-size: 100% 100%;
         }
-        .moveImage{
+        .moveImage:hover{
             animation: moveimg 10s infinite linear;
+        }
+        .mysvgdiv:hover .mysvg{
+            transition: all 200ms;
+            filter: drop-shadow(7px 5px 5px #e2e2e2);
+        }
+        .mysvgdiv:hover .myimg{
+            transition: all 200ms;
+            background-color: #1e66b8 ;
         }
         @keyframes moveimg{
             0%{
@@ -36,9 +45,20 @@
 
 <body >
     <div class="overflow-x-hidden">
+
+        <!-- promo section -->
+         <section class="w-full bg-white h-12 hidden lg:block ">
+            <!-- content  -->
+             <div class="flex flex-row gap-6  items-center mt-2 justify-center ">
+                <p class="font-mullish">RazerpayX payroll: 3 Clicks! Payroll Fixed! Automate Payroll now!</p>
+                <button class="bg-lightBlue text-white font-mullish py-[3px] px-[10px] font-bold hover:bg-lightBlue500 transition-all duration-200 rounded-md w-fit">
+                    know More
+                </button>
+             </div>
+         </section>
         <!-- nav bar -->
-        <nav class="bg-deepBlue ">
-            <div class="relative mx-auto w-[1080px] flex items-center justify-between font-mullish">
+        <nav class="bg-deepBlue z-30">
+            <div class="relative mx-auto w-[1080px] flex items-center justify-between font-mullish z-30">
             <a href="/" class="cursor-pointer py-7 px-7 lg:pr-7 z-30">
                 <img
                 src="media/logo.svg"
@@ -149,7 +169,7 @@
                                 <span>In-depth Reporting and Insights</span>
                             </li>
                         </ul>
-                        <div class="flex self-center md:items-center space-x-4  mt-5 md:mt-10 flex-col-reverse md:flex-row z-20">
+                        <div class="flex self-center md:self-start space-x-4  mt-5 md:mt-10 flex-col-reverse md:flex-row z-20">
                             <button class="bg-lightBlue w-full text-white font-mullish py-[14px] px-[18px] font-bold hover:bg-lightBlue500 transition-all duration-200 rounded-md md:w-fit">
                                 Sign Up Now<i class="fa fa-arrow-right text-sm h-1 w-1 px-2"></i></button>
 
@@ -164,18 +184,16 @@
 
         <div class=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10  ">  
             <!-- box1 -->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
-                <img src="media/payment-link-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11">
+            <div class="w-full min-h-[15rem] relative cursor-pointer mysvgdiv">
+                <img src="media/payment-link-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11 myimg">
                 <!-- box shape -->
             <svg
                 viewBox="0 0 349.32501220703125 225"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
-                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200"
-                style="stroke-opacity: 0.15"
-                >
-                <path
-                d="m 0 6 
+                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200 mysvg"
+                style="stroke-opacity:0.15 ">
+                <path d="m 0 6 
                 a 6 6 0 0 1 6 -6 
                 h 250.32501220703125 
                 a 16 16 0 0 1 11 5 
@@ -185,12 +203,10 @@
                 a 6 6 0 0 1 -6 6 
                 h -337.32501220703125 
                 a 6 6 0 0 1 -6 -6 
-                z"
-                fill="#fff"
-                ></path>
+                z" fill="#fff"></path>
             </svg>
             <!-- box-content -->
-            <div class="z-[10] absolute w-full h-full flex flex-col justify-evenly md:justify-between pl-5 py-6 pr-8">
+            <div class="z-[10] absolute w-full h-full flex flex-col justify-evenly md:justify-between pl-5 py-6 pr-8 ">
                 <div class="-bottom-16">
                     <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.1rem] md:text-[1.375rem]">Payment Links</h3>
                     <p class="font-mullish text-grayText mt-3 md:mt-6 text-sm md:text-base ">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately.</p>
@@ -202,14 +218,14 @@
             </div>
             </div>
             <!-- box2 -->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
-                <img src="media/payment-pages-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11">
+            <div class="w-full min-h-[15rem] relative cursor-pointer mysvgdiv">
+                <img src="media/payment-pages-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11 myimg">
                 <!-- box shape -->
             <svg
                 viewBox="0 0 349.32501220703125 225"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
-                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200"
+                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200 mysvg"
                 style="stroke-opacity: 0.15"
                 >
                 <path
@@ -240,14 +256,14 @@
             </div>
             </div>
             <!-- box3 -->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
-                <img src="media/payment-buttons-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11">
+            <div class="w-full min-h-[15rem] relative cursor-pointer mysvgdiv">
+                <img src="media/payment-buttons-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11 myimg">
                 <!-- box shape -->
             <svg
                 viewBox="0 0 349.32501220703125 225"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
-                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200"
+                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200 mysvg"
                 style="stroke-opacity: 0.15"
                 >
                 <path
@@ -266,7 +282,7 @@
                 ></path>
             </svg>
             <!-- box-content -->
-            <div class="z-[10] absolute w-full h-full flex flex-col justify-evenly md:justify-between pl-5 py-6 pr-8">
+            <div class="z-[10] absolute w-full h-full flex flex-col justify-evenly md:justify-between pl-5 py-6 pr-8 ">
                 <div>
                     <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.1rem] md:text-[1.375rem]">Payment Buttons</h3>
                     <p class="font-mullish text-grayText mt-3 md:mt-6 text-sm md:text-base">Create, copy & collect With Payment Button. Collect one time or subscription payments & more.</p>
@@ -278,14 +294,14 @@
             </div>
             </div>
             <!-- box4 -->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
-                <img src="media/subscriptions-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11  ">
+            <div class="w-full min-h-[15rem] relative cursor-pointer mysvgdiv">
+                <img src="media/subscriptions-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11 myimg ">
                 <!-- box shape -->
             <svg
                 viewBox="0 0 349.32501220703125 225"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
-                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200"
+                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200 mysvg"
                 style="stroke-opacity: 0.15"
                 >
                 <path
@@ -316,14 +332,14 @@
             </div>
             </div>
             <!-- box5 -->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
-                <img src="media/route-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11">
+            <div class="w-full min-h-[15rem] relative cursor-pointer mysvgdiv">
+                <img src="media/route-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11 myimg">
                 <!-- box shape -->
             <svg
                 viewBox="0 0 349.32501220703125 225"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
-                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200"
+                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200 mysvg"
                 style="stroke-opacity: 0.15"
                 >
                 <path
@@ -354,14 +370,14 @@
             </div>
             </div>
             <!-- box6 -->
-            <div class="w-full min-h-[15rem] relative cursor-pointer">
-                <img src="media/smart-collect-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11">
+            <div class="w-full min-h-[15rem] relative cursor-pointer mysvgdiv">
+                <img src="media/smart-collect-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11 myimg">
                 <!-- box shape -->
             <svg
                 viewBox="0 0 349.32501220703125 225"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
-                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200"
+                class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200 mysvg"
                 style="stroke-opacity: 0.15"
                 >
                 <path
@@ -455,14 +471,14 @@
                     <!-- grid -->
                     <div class=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 ">  
                         <!-- box1 -->
-                        <div class="w-full min-h-[15rem] relative cursor-pointer ">
-                            <img src="media/current-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11"/>
+                        <div class="w-full min-h-[15rem] relative cursor-pointer mysvgdiv">
+                            <img src="media/current-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11 myimg"/>
                             <!-- box shape -->
                         <svg
                             viewBox="0 0 349.32501220703125 225"
                             xmlns="http://www.w3.org/2000/svg"
                             preserveAspectRatio="none"
-                            class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute transition-all duration-200 z-[9]"
+                            class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute transition-all duration-200 z-[9] mysvg"
                             style="stroke-opacity: 0.75"
                             >
                             <path
@@ -493,14 +509,14 @@
                         </div>
                         </div>
                         <!-- box2 -->
-                        <div class="w-full min-h-[15rem] relative cursor-pointer">
-                            <img src="media/subscriptions-icon.svg" alt="" class=" absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11 bg-lightBlue"/>
+                        <div class="w-full min-h-[15rem] relative cursor-pointer mysvgdiv">
+                            <img src="media/subscriptions-icon.svg" alt="" class=" absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11 bg-lightBlue myimg"/>
                             <!-- box shape -->
                         <svg
                             viewBox="0 0 349.32501220703125 225"
                             xmlns="http://www.w3.org/2000/svg"
                             preserveAspectRatio="none"
-                            class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200"
+                            class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200 mysvg"
                             style="stroke-opacity: 0.75"
                             >
                             <path
@@ -531,14 +547,14 @@
                         </div>
                         </div>
                         <!-- box3 -->
-                        <div class="w-full min-h-[15rem] relative cursor-pointer">
-                            <img src="media/payouts-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11"/>
+                        <div class="w-full min-h-[15rem] relative cursor-pointer mysvgdiv">
+                            <img src="media/payouts-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 rounded-full z-[8] transition-all duration-200 w-11 myimg"/>
                             <!-- box shape -->
                         <svg
                             viewBox="0 0 349.32501220703125 225"
                             xmlns="http://www.w3.org/2000/svg"
                             preserveAspectRatio="none"
-                            class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200"
+                            class="stroke-1 stroke-[#818597] h-[220px] md:h-full w-full absolute z-[9] transition-all duration-200 mysvg"
                             style="stroke-opacity: 0.75"
                             >
                             <path
@@ -735,7 +751,7 @@
          <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-20"> 
             <div class="w-10/12 max-w-[1080px] mx-auto relative pt-4 flex flex-col lg:flex-row">
                 <!-- left part -->
-                <div class=" flex flex-col justify-center items-start w-full lg:max-w-[calc(100%-500px)]">
+                <div class=" flex flex-col justify-center items-start w-full lg:max-w-[calc(100%-500px)] mt-10">
                     <h2 class="font-mullish font-bold text-base pt-4 md:text-xl lg:text-2xl text-deepBlue">Join the 50,00,000+ businesses using Razorpay</h2>
                     <div class="w-6 h-1 bg-greenLight my-4 mb-4 lg:mb-10"></div>
                     <p class="font-mullish mt-4 opacity-70 text-sm md:text-base">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.
@@ -756,7 +772,7 @@
             <div class="max-w-[1300] w-10/12 mx-auto relative py-20 ">
                 <h2 class="font-mullish font-bold text-xl lg:text-2xl text-deepBlueHead text-center">An Experience <br>People Love to Talk About</h2>
                 <div class="w-6 h-1 mx-auto bg-greenLight my-4"></div>
-                <img src="media/feature-section1-dottedrows.png" alt="" loading="lazy" class="absolute w-[100px] -top-[6rem] left-[2rem] lg:w-[200px] lg:top-[10rem] lg:left-[2rem] -z-10 rotate-180"/>
+                <img src="media/feature-section1-dottedrows.png" alt="" loading="lazy" class="absolute w-[100px] top-[2rem] left-[2rem] lg:w-[200px] lg:top-[10rem] lg:left-[2rem] -z-10 rotate-180"/>
 
                     <!-- slide left -->
                     <div class=" w-[40px] h-[40px] md:w-[100px] md:h-[100px] absolute left-0 top-[35%] md:top-[50%] bg-[#f4f8ff] rounded-full flex justify-center items-center">
@@ -926,7 +942,7 @@
                             </ul>
                         </div>
                         <div>
-                            <p class="text-gray-600 font-mullish font-bold my-2 opacity-90 text-sm md:text-base  mt-3 ">RISK & FRAUD
+                            <p class="text-gray-600 font-mullish font-bold my-2 opacity-90 text-xs md:text-base  mt-3 ">RISK & FRAUD
                             </p>
                             <ul class="space-y-0 md:space-y-2">
                                 <li class="font-mullish text-xs md:text-sm text-lightBlue500 hover:text-grayBlue transition-all duration-200 cursor-pointer"><a href="#"></a>
@@ -1090,13 +1106,13 @@
                             <p class="text-gray-600 font-mullish font-bold my-2 opacity-90 text-sm md:text-base ">COMPANY
                             </p>
                             <ul class="space-y-0 md:space-y-2">
-                                <li class="font-mullish text-sm text-lightBlue500 hover:text-grayBlue transition-all duration-200 cursor-pointer"><a href="#"></a>
+                                <li class="font-mullish text-xs md:text-sm text-lightBlue500 hover:text-grayBlue transition-all duration-200 cursor-pointer"><a href="#"></a>
                                     About Us
                                 </li>
                                 <li class="font-mullish text-xs md:text-sm text-lightBlue500 hover:text-grayBlue transition-all duration-200 cursor-pointer"><a href="#"></a>
                                     Careers  <span class=" bg-green-500 md:p-1 text-white font-bold border rounded-sm text-xs md:text-sm ">We're hiring!</span>
                                 </li>
-                                <li class="font-mullish text-sm text-lightBlue500 hover:text-grayBlue transition-all duration-200 cursor-pointer"><a href="#"></a>
+                                <li class="font-mullish text-xs md:text-sm text-lightBlue500 hover:text-grayBlue transition-all duration-200 cursor-pointer"><a href="#"></a>
                                     Terms of Use
                                 </li>
                                 <li class="font-mullish text-xs md:text-sm text-lightBlue500 hover:text-grayBlue transition-all duration-200 cursor-pointer"><a href="#"></a>
