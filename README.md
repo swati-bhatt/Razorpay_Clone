@@ -1,72 +1,47 @@
 
 # Hey, I'm Swati Bhatt👩🏻‍💻!
 
-<!-- change 1 name-->
-<!-- # My Portfolio🌻   -->
+# RazorPay Clone🎭 
 
 <!-- change 2 discription-->
-<!-- A brief description of what this project does and who it's for
-A brief description of what this project does and who it's for -->
-<!-- change 3 link-->
-<!-- [Visit Now🚀](https://swati-bhatt.github.io/Parallax/)
+This is a front-end clone of the Razorpay website, built for practice and to demonstrate the ability to replicate modern web designs. 
+
+The clone mimics the layout, design elements, and overall user interface of the original Razorpay site.
+
+[Visit Now🚀](https://swati-razorpay-clone.vercel.app/)
 
 
-##  ☞Tech Stack Used 🖇️ -->
-<!-- change 4 whole tech stack invalidate link-->
-<!-- **Client-Side :** 
-![Static Badge](https://img.shields.io/badge/HTML-%2300000?style=flat&logo=html5&labelColor=black&color=%23E34F26)
-![Static Badge](https://img.shields.io/badge/React-%23000000?style=flat&logo=react&labelColor=black&color=%2361DAFB)
-![Static Badge](https://img.shields.io/badge/CSS-%23000000?style=flat&logo=css3&logoColor=%231572B6&labelColor=black&color=%231572B6)
+##  ☞Tech Stack Used 🖇️
+<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
+<a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
+<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a>
 
-React, Redux, TailwindCSS
+##  ☞Features🧐 
+- Fully responsive design, adapting seamlessly to various screen sizes 
+- Navigation bar, hero section, and footer styled to match the original site
+- Clean and structured code with comments for clarity
 
-**Server-Side:** Node, Express
-
-**Extras:** Node, Express
- -->
-
-<!-- ##  ☞Sneak Peak 🫣 -->
-<!-- add ss-->
-<!-- ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-##  ☞Features🧐 -->
-<!-- change features-->
-<!-- - Light/dark mode toggle🌗
-- Live previews💥
-- Fullscreen mode💻
-- Cross platform 🫨
+## ☞Future Improvements🔮
+- Adding more interactivity and dynamic features
+- Backend integration for payments (optional)
 
 
-##  ☞Collaborators🤝 -->
-<!-- change/ remove-->
-<!-- 🙋🏻[@octokatherine](https://www.github.com/octokatherine)
+##  ☞Sneak Peak 🫣
+
+![Home Screenshot](media/demo1.png)
+![Home Screenshot](media/demo2.png)
+![responsiveness Screenshot](media/demo3.png)
+![responsiveness Screenshot](media/demo4.png)
+![footer Screenshot](media/demo5.png)
 
 
 ##  ☞Feedback✍🏻
 I’d love to hear your thoughts on this project and would really appreciate any suggestions you have. Please feel free to reach out to me at:
 get.swatibhatt@gmail.com
 
-
 ##  ☞Contact Me 📩
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=undertale&logoColor=E71D29)](https://swati-bhatt.github.io/Portfolio/) 
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/swatibhatt153) -->
-
-
-<!-- Chrome only  https://simpleicons.org/?q=reac
-
-https://shields.io/badges/static-badge -->
-
-
-
-<!-- BADGES -->
-<!-- 
-HTML 
-![Static Badge](https://img.shields.io/badge/HTML-%2300000?style=flat&logo=html5&labelColor=black&color=%23E34F26)
-REACT
-![Static Badge](https://img.shields.io/badge/React-%23000000?style=flat&logo=react&labelColor=black&color=%2361DAFB)
-CSS
-![Static Badge](https://img.shields.io/badge/CSS-%23000000?style=flat&logo=css3&logoColor=%231572B6&labelColor=black&color=%231572B6) 
-
-cmd+shift+v for viewing it 
--->
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/swatibhatt153)
