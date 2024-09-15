@@ -8,7 +8,7 @@ This is a front-end clone of the Razorpay website, built for practice and to dem
 
 The clone mimics the layout, design elements, and overall user interface of the original Razorpay site.
 
-[Visit Now🚀](https://swati-razorpay-clone.vercel.app/)
+[Visit Now🚀](https://swatibhatt-razorpay.vercel.app/)
 
 
 ##  ☞Tech Stack Used 🖇️
